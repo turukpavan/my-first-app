@@ -1,0 +1,55 @@
+.main-banner{
+    min-width: 90vw;
+    min-height: 160vh;
+    background: url(/public/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size:cover;
+    z-index: -1;
+}
+.hero{
+    top: 30%;
+    left: 18%;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+@media only screen and (max-width: 768px) {
+    .hero{
+        left: 15%;
+    }
+  }
+  
+
+.card{
+    top: 10%;
+    left: 5%;
+}
+
+.button{
+    color: #7B6ADA;
+    background-color: aliceblue;
+    border: none;
+
+}
+.btn-1{
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.btn-2{
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+.card span{
+ font-weight: 600;
+}
+
+#btn-3{
+    color: aliceblue;
+    background-color: #7B6ADA;
+    padding: 5px 15px;
+    margin-bottom: 20%;
+}
