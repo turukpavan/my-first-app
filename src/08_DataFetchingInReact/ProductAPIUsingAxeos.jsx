@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { Component } from "react";
 // import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -15,12 +16,21 @@ class ProductAPIUsingAxeos extends Component {
     this.callProductAPI();
   }
 
-  async callProductAPI() {
-    const product = await fetch("https://fakestoreapi.com/products");
-    const productData = await product.json();
-    console.log(productData);
+//   async callProductAPI() {
+//     const product = await fetch("https://fakestoreapi.com/products");
+//     const productData = await product.json();
+//     console.log(productData);
+//     this.setState({ products: productData });
+//   }
+
+
+async callProductAPI(){
+    const product = await axios("https://fakestoreapi.com/products");
+    const productData = product.data;
+   console.log(productData);
     this.setState({ products: productData });
-  }
+
+}
 
   render() {
     return (

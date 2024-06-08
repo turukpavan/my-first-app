@@ -26,7 +26,7 @@ const UseEffectHook = () => {
     // )
 
     //2. useEffect hook with empty dependency Array
-    // 
+    // call on only first render //mounting phase
     // useEffect(
     //     ()=>{
     //         console.log('Inside useEffect with Empty dependency array')
@@ -34,6 +34,7 @@ const UseEffectHook = () => {
     // )
 
     //3. useEffect hook dependency array
+    // call on first render + change on specific dependency or state 
     useEffect(
         ()=>{
            console.log('Inside useEffect hook with Dependency Array')     

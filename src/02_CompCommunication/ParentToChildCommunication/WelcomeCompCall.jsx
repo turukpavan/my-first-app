@@ -1,7 +1,7 @@
 import React from "react";
-import ClassCompCall from './ClassCompCall';
-import FuncCompCall from './FuncCompCall';
 import Card from "../Props/Card";
+import ClassCompCall from "./ClassCompCall";
+import FuncCompCall from './FuncCompCall';
 
 
 const WelcomeCompCall =() =>{
@@ -14,10 +14,10 @@ const WelcomeCompCall =() =>{
     }
     return(
         <>
-        {/* <h1>Welcome to WelcomeCompCall</h1>
+        <h1>Welcome to WelcomeCompCall</h1>
 
         <ClassCompCall myName={name} companyName="Infosis" personObj={person}/>
-        <FuncCompCall myName={name}/> */}
+        <FuncCompCall myName={name}/>
 
         <Card title="card 1" description="this is description"/>
         <Card title="card 2" description="this is description"/>
